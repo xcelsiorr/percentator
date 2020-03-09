@@ -1,1 +1,90 @@
-var _0xd67f=["abs","sign","toFixed","M","k","onload","innerHTML",".chart-result-text","querySelector","strokeDasharray","style",".circle","0%","value","getElementById","percent","total-value","percent-result","value-2","total-2","percent-result-2","","%","start-value","end-value","log","percent-result-3","id","target","calculate-percentage","calculate-percentage-2","calculate-percentage-3","click","addEventListener","forEach",".button-calculate","querySelectorAll"];function formatChartResult(e){return Math[_0xd67f[0]](e)>999999?Math[_0xd67f[1]](e)*(Math[_0xd67f[0]](e)/1e6)[_0xd67f[2]](1)+_0xd67f[3]:Math[_0xd67f[0]](e)>999?Math[_0xd67f[1]](e)*(Math[_0xd67f[0]](e)/1e3)[_0xd67f[2]](1)+_0xd67f[4]:e%1==0?e:e[_0xd67f[2]](2)}window[_0xd67f[5]]=configureControls();const setChartText=e=>{document[_0xd67f[8]](_0xd67f[7])[_0xd67f[6]]=e},clearChart=()=>{document[_0xd67f[8]](_0xd67f[11])[_0xd67f[10]][_0xd67f[9]]=[0,100],setChartText(_0xd67f[12])},displayChart=e=>{document[_0xd67f[8]](_0xd67f[11])[_0xd67f[10]][_0xd67f[9]]=[e,100]},showResult=(e,t)=>{document[_0xd67f[14]](t)[_0xd67f[13]]=e},calculatePercentage=()=>{let e=document[_0xd67f[14]](_0xd67f[15])[_0xd67f[13]],t=document[_0xd67f[14]](_0xd67f[16])[_0xd67f[13]];showResult(e*t/100,_0xd67f[17]),displayChart(0),setChartText(_0xd67f[12])},calculatePercentage2=()=>{let e=document[_0xd67f[14]](_0xd67f[18])[_0xd67f[13]],t=document[_0xd67f[14]](_0xd67f[19])[_0xd67f[13]];if(!e||!t)return setChartText(_0xd67f[12]),displayChart(0),!1;let d=e/t*100;showResult(d,_0xd67f[20]),displayChart(d),setChartText(`${_0xd67f[21]}${formatChartResult(d)}${_0xd67f[22]}`)},calculatePercentage3=()=>{const e=document[_0xd67f[14]](_0xd67f[23])[_0xd67f[13]],t=(e-document[_0xd67f[14]](_0xd67f[24])[_0xd67f[13]])/e*100*-1;console[_0xd67f[25]](t),showResult(t,_0xd67f[26]),displayChart(t),setChartText(`${_0xd67f[21]}${formatChartResult(t)}${_0xd67f[22]}`)};function calculateResult(e){let t=e[_0xd67f[28]][_0xd67f[27]];_0xd67f[29]===t?calculatePercentage():_0xd67f[30]===t?calculatePercentage2():_0xd67f[31]===t&&calculatePercentage3()}function configureControls(){document[_0xd67f[36]](_0xd67f[35])[_0xd67f[34]](e=>{e[_0xd67f[33]](_0xd67f[32],calculateResult)})}
+window.onload = configureControls();
+
+function formatChartResult(num) {
+  return Math.abs(num) > 999999
+    ? Math.sign(num) * (Math.abs(num) / 1000000).toFixed(1) + "M"
+    : Math.abs(num) > 999
+    ? Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
+    : num % 1 === 0
+    ? num
+    : num.toFixed(2);
+}
+
+const setChartText = text => {
+  const chartText = document.querySelector(".chart-result-text");
+  chartText.innerHTML = text;
+};
+
+const clearChart = () => {
+  let circle = document.querySelector(".circle");
+  circle.style.strokeDasharray = [0, 100];
+  setChartText("0%");
+};
+
+const displayChart = result => {
+  let circle = document.querySelector(".circle");
+  let strokeDashArray = result < 0 ? [100, result] : [result, 100];
+  circle.style.strokeDasharray = strokeDashArray;
+};
+
+const showResult = (result, id) => {
+  let resultField = document.getElementById(id);
+  resultField.value = result;
+};
+
+const calculatePercentage = () => {
+  let percentage = document.getElementById("percent").value;
+  let totalValue = document.getElementById("total-value").value;
+  let result = (percentage * totalValue) / 100;
+  showResult(result, "percent-result");
+  displayChart(0);
+  setChartText("0%");
+};
+
+const calculatePercentage2 = () => {
+  let value = document.getElementById("value-2").value;
+  let total = document.getElementById("total-2").value;
+  if (!value || !total) {
+    setChartText("0%");
+    displayChart(0);
+    return false;
+  }
+  let result = (value / total) * 100;
+  document.getElementsByClassName("circle")[0].style.stroke = "#ff9f00";
+  showResult(result, "percent-result-2");
+  displayChart(result);
+  setChartText(`${formatChartResult(result)}%`);
+};
+
+const calculatePercentage3 = () => {
+  const startValue = document.getElementById("start-value").value;
+  const endValue = document.getElementById("end-value").value;
+  if (!startValue || !endValue) {
+    setChartText("0%");
+    displayChart(0);
+    return false;
+  }
+  const result = ((startValue - endValue) / startValue) * 100 * -1;
+  document.getElementsByClassName("circle")[0].style.stroke = "#4CC790";
+  showResult(result, "percent-result-3");
+  displayChart(result);
+  setChartText(`${formatChartResult(result)}%`);
+};
+
+function calculateResult(event) {
+  let id = event.target.id;
+  if (id === "calculate-percentage") {
+    calculatePercentage();
+  } else if (id === "calculate-percentage-2") {
+    calculatePercentage2();
+  } else if (id === "calculate-percentage-3") {
+    calculatePercentage3();
+  }
+}
+
+function configureControls() {
+  let calculateButtons = document.querySelectorAll(".button-calculate");
+  calculateButtons.forEach(button => {
+    button.addEventListener("click", calculateResult);
+  });
+}

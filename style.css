@@ -24,7 +24,7 @@ body {
 .header-container .title {
   padding: 25px 0;
   color: #ffffff;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .description {
@@ -40,7 +40,7 @@ body {
 }
 
 .calculator-container {
-  width: 50%;
+  width: 45%;
 }
 
 .calculator-container ul {
@@ -52,7 +52,7 @@ body {
   width: 96%;
   padding: 20px 0;
   margin: 0 auto 0 auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-radius: 3px;
   border-bottom: 1px solid #d9d9d9;
   display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 .calc-controls {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 input {
@@ -74,7 +74,7 @@ input {
 
 .calc-item input {
   width: 100px;
-  height: 40px;
+  height: 38px;
   margin: 0 5px;
   border: 1px solid #dfdfdf;
   border-radius: 3px;
@@ -82,13 +82,9 @@ input {
   padding: 0 10px;
 }
 
-#total-value {
-  width: 180px;
-}
-
 .calculate-controls {
   display: flex;
-  margin-right: 50px;
+  margin-right: 20px;
   align-items: center;
 }
 
@@ -107,7 +103,7 @@ input {
 .result {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 500;
   width: 120px;
   height: 40px;
@@ -149,7 +145,6 @@ input {
 }
 
 .circle {
-  stroke: #ff9f00;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
@@ -193,17 +188,13 @@ input {
   justify-content: center;
 }
 
-/* .calculator-container::after {
-  content: "Tips Use tab to move to the next field. Use shift-tab to move to the previous field. Press enter to calculate.";
-  background-color: #cbeeee;
-  border-radius: 3px;
-  position: relative;
-  top: 50px;
-} */
-
 @media only screen and (max-width: 425px) {
   .body-container {
     margin-top: 30px;
+  }
+
+  .description {
+    font-size: 0.5em;
   }
 
   .calculator-container {
@@ -264,7 +255,29 @@ input {
     margin-left: 10px;
   }
 
+  .calculate-controls {
+    margin-right: 10px;
+  }
+
   .chart-container {
     width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .calculator-container {
+    width: 60%;
+  }
+
+  .chart-container {
+    width: 28%;
+  }
+
+  .calc-controls {
+    margin-left: 18px;
+  }
+
+  .calculate-controls {
+    margin-right: 18px;
   }
 }
