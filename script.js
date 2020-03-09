@@ -23,7 +23,7 @@ const clearChart = () => {
 
 const displayChart = result => {
   let circle = document.querySelector(".circle");
-  let strokeDashArray = result < 0 ? [100, result] : [result, 100];
+  let strokeDashArray = [result, 100];
   circle.style.strokeDasharray = strokeDashArray;
 };
 
