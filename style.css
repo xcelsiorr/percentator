@@ -136,6 +136,7 @@ input {
   width: 15%;
   margin-left: 2%;
   text-align: center;
+  display: none;
 }
 
 .calculator-container,
@@ -179,7 +180,7 @@ input {
 
 .info-container {
   position: relative;
-  top: 50px;
+  top: 55px;
   text-align: center;
 }
 
