@@ -4,29 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="This free Percentage Calculator is a simple online tool that helps you to do simple percentage calculations and gives the most accurate results."
-    />
+    <meta name="description" content="This free Percentage Calculator is a simple online tool that helps you to do simple percentage calculations and gives the most accurate results.">
     <link rel="canonical" href="http://mypercentagecalculator.com/" />
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js" defer></script>
-    <title>[BEST] Percentage Calculator - Calculate Percentages</title>
+    <title>[BEST] Percentage Calculator - Calculate Percentages </title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-151391163-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151391163-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag("config", "UA-151391163-3");
-    </script>
+  gtag('config', 'UA-151391163-3');
+</script>
+
   </head>
   <body>
     <div id="main-container">
@@ -34,8 +27,7 @@
         <div class="title">
           <p><a href="index.php">My Percentage Calculator</a></p>
           <p class="description">
-            My Percentage Calculator is a simple online tool to calculate
-            percentages.
+            My Percentage Calculator is a simple online tool to calculate percentages.
           </p>
         </div>
       </div>
@@ -124,67 +116,30 @@
       <div class="footer-container-main">
         <div class="footer-content">
           <h1 class="footer-title">
-            My Percentage Calculator - A simple online tool to calculate
-            Percentage
+            My Percentage Calculator - A simple online tool to calculate Percentage
           </h1>
           <div class="footer-desc">
             <h2 class="footer-ques">What is percentage calculator ?</h2>
             <p class="footer-ans-data">
-              My percentage calculator a simple yet advanced version of a
-              calculator, that helps you with all types of perecentage
-              calculations, with an easy to use interface. This platform enables
-              you to calculate different percentage results accurately, thereby
-              simplying all the percentage related problems from your day to day
-              life.
+              My percentage calculator is one of the best online tools which can be used to find percentages. This is a simple user-friendly calculator website that gives a result more accurately .using this calculator you will be able to solve different percentage related problems arise during your day to day life.
             </p>
-            <h2 class="footer-ques">
-              How to use the Percentage calculator website ?
-            </h2>
+            <h2 class="footer-ques">How to use Percentage calculator website ?</h2>
             <p class="footer-ans-data">
-              Using this percentage calculator is quite easy, as is the
-              interface. Simply enter the numbers for which you need to
-              calculate the percentage in their respective fields, and click on
-              the calculate button, which would instantly calculate and gives
-              the results. My percentage calculator helps you to find a specific
-              percentage of a number, determine what percentage a number is of
-              another, the percentage increase or decrease between two numbers,
-              and many more!
+             Using this percentage calculator is quite easy, the only thing you have to do that just values in input boxes which want to calculate, then click on the calculate button get the results. using this online tool will be able to find a particular percentage of a number, a number is what percentage of another number and also able to find the percentage of increase or decrease between two numbers.
             </p>
             <h2 class="footer-ques">What is Percentage Formula ?</h2>
             <p class="footer-ans-data">
-              Percentage formula helps you determine the percentage of a number
-              with respect to another number, and express the result as a
-              dimensionless ratio between the two numbers. If you need to find
-              <i>b</i> % of a number <i>a</i>, then <i>b</i> is multiplied by
-              <i>a</i> and divided by 100, to get the <i>b%</i> of <i>a</i>. If
-              you want to find 30% of 200, this percentage calculator tool works
-              by multiplying 30 and 200, and then dividing the result by 100
-              which would give you the answer as 60. In case you need to
-              calculate how much percentage of a number <i>a</i> is <i>b</i>,
-              then <i>b</i> is divided by <i>a</i> and multiplied by 100, to get
-              the result. For example, to find how much percentage of 75 is 25,
-              divide 25 by 75 and multiply by 100, which would give the answer
-              33.33 %.
+             Using the percentage formula we can find the percentage of a number. if a number and we need to find the b % of number a then b is multiplied by a and divided by 100 to get the b% of a. By using this percentage calculator website we will be able to find a particular percentage of a number .conside an example 30% of 200 in this case 30* 200 and divide by 100 to give the result as 60.
+             using this percentage calculator we will be able to find a number is what percentage of another number. consider a number a and b, if we need to find a is what percentage if b then a is divided by b and multiplied by 100. For example to find 25 is what percentage of 75, then 25 is divided by 75 and then multiplied by 100 to get the result as 33.33 %.
             </p>
-
+            
             <h2 class="footer-ques">What is Percentage Change Formula ?</h2>
             <p class="footer-ans-data">
-              My percentage calculator also works as a percentage change
-              calculator, to help you quantify the increase/decrease from one
-              number to another, and give you this change in terms of percentage
-              difference. i.e this tool helps you to find the percentage
-              increase or percentage decrease between two numbers. If you want
-              to find the percentage change of a number <i>a</i> to a number
-              <i>b</i>, then the difference between the two numbers is
-              calculated and divided by <i>b</i>, and then multiplied by 100.
-              For example, if you want to find the percentage increase or
-              decrease of 75 to 125, then the difference between the two numbers
-              are calculated, divided by 125 and multiplied by 100, to get the
-              result 66.66%.
+              we will be able to find the percentage change of a number using this online percentage calculator, ie this tool helps to find the percentage of increase or percentage of decrease of a number. if a number is changed its value from a to b we can find the percentage of increase or percentage of decrease by finding the difference between two numbers and dividing it by b and multiply it by 100. For example, if you need the fined percentage of increase or decrease of a 75 to 125 then the difference  between two values is taken and then divided by 125 and multiplied by  100 to get the result 66.66%.
             </p>
           </div>
         </div>
       </div>
     </div>
-  </body>
+ </body>
 </html>
